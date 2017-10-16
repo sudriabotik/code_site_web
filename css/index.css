@@ -1,0 +1,71 @@
+@font-face
+{
+	font-family: 'quicksand';
+	src: url('../font/Quicksand-Regular.otf') format('truetype');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'quicksand';
+
+}
+
+content {
+	background: inherit;
+	background-image:url("../img/robot.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	
+}
+
+section {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	padding-bottom: 5em;
+	padding-top: 5em;
+}
+
+#section1 {
+	background-color: #EEEEEE;
+}
+
+#section2
+{
+	background-color: rgb(19,35,108);
+	padding-top: 0.5em;
+	padding-bottom: 2.4em;
+}
+
+#section2 h1
+{
+	text-align: center;
+	font-size: 2.25em;
+	color: rgb(174,186,240);
+	font-family: 'quicksand';
+}
+
+#section2 .text
+{
+	font-family: 'quicksand';
+	text-align: justify;
+	color : rgb(174,186,240);
+	font-size: 1.5em;
+	text-indent: 2%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+#section5
+{
+	background-color: #EE00EE;	
+}
+#section6 
+{
+	background-color: #EEEEEE;
+}

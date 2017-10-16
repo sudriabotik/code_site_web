@@ -1,0 +1,130 @@
+nav
+{ 
+	display: flex;
+	flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background-color: #1E5995;
+    color:black;
+    padding-bottom: 0.5em;
+    padding-left: 10em;
+}
+
+.nav_gauche
+{
+	display: flex;
+	justify-content: space-around;
+	width: 50em;
+	align-items: center;
+
+}
+
+.nav_droite
+{
+	display: flex;
+	justify-content: space-around;
+	width: 50em;
+	align-items: center;
+}
+
+.nav_centre
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.nav_gauche a, .nav_droite a
+{
+	color: black;
+	text-decoration: none;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+
+}
+
+.nav_gauche a:hover, .nav_droite a:hover
+{
+	color: white;
+}
+
+.nav_centre img
+{
+	height: 10em;
+	padding-bottom: 1em;
+}
+
+.reseaux_sociaux
+{
+	padding-top: 1em;
+	padding-right: 1em;
+	width: 10em;
+	text-align: right;
+}
+
+.reseaux_sociaux i
+{
+	color:black;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.reseaux_sociaux i:hover
+{
+	color: white;
+}
+
+.navbar
+{
+	height:2em;
+	z-index: 10;
+	background:#1E5995;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0; 
+	-webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+}
+
+
+
+.navbar a
+{
+	text-decoration: none;
+  	font-size: 14px;
+  	color: black;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+
+}
+
+.navbar a:hover
+{
+	color:white;
+}
+
+.shrink
+{
+	height:0px;
+}

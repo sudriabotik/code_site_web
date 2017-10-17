@@ -15,9 +15,11 @@ body {
 
 }
 
-content {
-	background: inherit;
+.content {
+
 	background-image:url("../img/robot.jpg");
+	image-rendering: auto;
+	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	
@@ -27,8 +29,8 @@ section {
 	display: inline-block;
 	width: 100%;
 	height: auto;
-	padding-bottom: 5em;
-	padding-top: 5em;
+	/*padding-bottom: 5em;
+	padding-top: 5em;*/
 }
 
 #section1 {
@@ -61,6 +63,13 @@ section {
 	margin-right: 4%;
 }
 
+#section3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 5px solid black;
+}
 #section5
 {
 	background-color: #EE00EE;	

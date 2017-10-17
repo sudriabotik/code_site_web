@@ -29,6 +29,9 @@
 	    <link href="css/timeline.css" rel="stylesheet">
 	    <link href="css/widget.css" rel="stylesheet">
 
+	    <!-- Animations -->
+	    <link href="css/animation-sponsors.css" rel= "stylesheet">
+
 	</head>
     <body>
     	<div class="loader">
@@ -257,6 +260,20 @@
 				</div> <!-- .navbar -->
 	        </nav>
 
+	        <!-- Introduction -->  
+		    <section id = "section2">
+		      	<h1>Qui sommes-nous ?</h1><br>
+		      		<div class="text">
+		      			L'association Sudriabotik de l'ESME Sudria (loi 1901) à vu le jour en janvier 2001, remplaçant le club robotique créé en 1996. Son but est simple, permettre à des élèves dynamiques et motivés de notre école d'ingénieur de se réunir et de réaliser un robot pour participer à la Coupe de France de Robotique.
+		      		</div><br></br>
+		      		<div class="text">
+		      			Chaque année, tous les membres utilisent leur énergie et leur temps libre pour concevoir et réaliser ce projet : chacun partage son savoir avec les autres et le travail effectué permet de mettre en pratique les cours vus à l'école mais aussi de mieux comprendre notre futur métier d'ingénieur et même de découvrir des domaines hors de nos formations.
+		      		</div><br></br>
+		      		<div class="text">
+		      			L'association comporte quatre départements : mécanique, électronique, communication et stratégie ; dont chaque chef de département répartit le travail entre les différents membres de l'équipe selon les motivations et les compétences. Le but est d'être le plus efficace possible : la réalisation de notre robot s'effectue en effet en parallèle avec nos études et les disponibilités de chacun varient.
+		      		</div>
+		    </section> <!-- #section2 -->
+
 		    <!-- Timeline -->
 		    <section id = "section1">
 		      	<section class="cd-horizontal-timeline">			
@@ -284,14 +301,14 @@
 				</section> <!-- .cd-horizontal-timeline -->
 		    </section> <!-- #section1 -->
 
-		    <!--  -->
-		    <section id = "section2">
-		    </section> <!-- #section2 -->
+		    
+		    <!-- Sponsors -->
+		    <section id = "section3" class='animatedParent' data-sequence='250'>
 
-		    <!--  -->
-		    <section id = "section3">
-		    </section> <!-- #section3 -->
-
+		      	<a href="http://www.elsys-design.com/en" ><img src="img/logoElsys.png" class='animated fadeInLeft slow' data-id='1'></a>
+		      	<a href="https://www.thalesgroup.com" ><img src="img/logoThales.png" class='animated fadeInLeft slow' data-id='2'></a>
+		      	<a href="http://www.esme.fr"><img src="img/logoEsme.png" class='animated fadeInLeft slow' data-id='3'></a>   
+		    </section> <!-- .section3 -->
 		    <!-- -->
 		    <section id = "section4">
 		    </section> <!-- #section4 -->
@@ -305,6 +322,18 @@
 					<textarea id="message" name="message" type="text" placeholder="MESSAGE" required></textarea>
 		  			<input id="submit" name="envoi" type="submit" value="GO!">
 		  		</form>
+		  		<iframe
+				  width="600"
+				  height="450"
+				  frameborder="0"
+
+				  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC1J7ARM26H48ztuuPDe3Iq2mpfL83Rrug
+				    &q=ESME%20Sudria%20Brandebourg
+				    &zoom=17
+  					&attribution_source=Google+Maps+Embed+API
+  					&attribution_web_url=http://http://www.sudriabotik.fr/
+  					&attribution_ios_deep_link_id=comgooglemaps://?daddr=ESME%20Sudria%20Brandebourg">
+				</iframe>
 			</section> <!-- #section5 -->
 			
 			<!-- Widget -->
@@ -374,6 +403,9 @@
 			
 			<!-- Page de chargement -->
 			<script type="text/javascript" src="js/loading.js"></script>
+
+			<!-- Script apparition au scroll -->
+			<script src="js/animation-sponsors.js"></script>
 
 		</div> <!-- .content -->
 	</body>

@@ -1,13 +1,11 @@
 nav
 { 
 	display: flex;
+	background-color: rgba(0, 0, 0, 0);
 	flex-direction: row;
     text-align: center;
     justify-content: center;
-    background-color: #1E5995;
-    color:black;
-    padding-bottom: 0.5em;
-    padding-left: 10em;
+    margin-bottom: 25em;
 }
 
 .nav_gauche

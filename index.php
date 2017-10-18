@@ -28,6 +28,7 @@
 	    <link href="css/form.css" rel="stylesheet" >
 	    <link href="css/timeline.css" rel="stylesheet">
 	    <link href="css/widget.css" rel="stylesheet">
+	    <link href="css/equipe.css" rel="stylesheet">
 
 	    <!-- Animations -->
 	    <link href="css/animation-sponsors.css" rel= "stylesheet">
@@ -304,14 +305,131 @@
 		    
 		    <!-- Sponsors -->
 		    <section id = "section3" class='animatedParent' data-sequence='250'>
-
 		      	<a href="http://www.elsys-design.com/en" ><img src="img/logoElsys.png" class='animated fadeInLeft slow' data-id='1'></a>
 		      	<a href="https://www.thalesgroup.com" ><img src="img/logoThales.png" class='animated fadeInLeft slow' data-id='2'></a>
 		      	<a href="http://www.esme.fr"><img src="img/logoEsme.png" class='animated fadeInLeft slow' data-id='3'></a>   
 		    </section> <!-- .section3 -->
 		    <!-- -->
 		    <section id = "section4">
-		    </section> <!-- #section4 -->
+		    	<div class="wrapper">
+					  <h1>NOTRE EQUIPE</h1>
+					  <div class="cols">
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Georges CORBINEAU</p>
+					              <span>Président</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+											  <p>4e année à l'ESME Sudria </p>
+											  <span><br>2 ans à Sudriabotik</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Hanako AUDRY</p>
+					              <span>Vice-présidente <br>&<br>Responsable mécanique</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>4e année à l'ESME Sudria</p>
+												<span><br>3 ans à Sudriabotik</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Pierre WILS</p>
+					              <span>Trésorier</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>1ère année à l'ESME Sudria </p>
+												<span><br>2 ans à Sudriabotik </span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Florence PASCUAL</p>
+					              <span>Secrétaire</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>4e année à l'ESME Sudria </p>
+												<span><br>2 ans à Sudriabotik </span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Quentin CHOPINET</p>
+					              <span>Responsable électronique</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>4e année à l'ESME Sudria </p>
+												<span><br>1 an à Sudriabotik</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Nicolas GAIGE</p>
+					              <span>Responsable informatique</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>4e année à l'ESME Sudria </p>
+												<span><br>1 an à Sudriabotik </span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="container3">
+										<div class="front" style="background-image: url(img/logo_noir.png)">
+											<div class="inner">
+												<p>Mathilde STAEHLE</p>
+					              <span>Responsable communication</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>4e année à l'ESME Sudria </p>
+												<span><br>1 an à Sudriabotik </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					 </div>
+		      	
+		    </section> <!-- .section3 -->
 
 		    <!-- Formulaire -->
 		    <section id = "section5">
@@ -323,8 +441,8 @@
 		  			<input id="submit" name="envoi" type="submit" value="GO!">
 		  		</form>
 		  		<iframe
-				  width="600"
-				  height="450"
+				  width="300"
+				  height="225"
 				  frameborder="0"
 
 				  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC1J7ARM26H48ztuuPDe3Iq2mpfL83Rrug

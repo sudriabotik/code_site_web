@@ -32,12 +32,12 @@ section {
 }
 
 #section1 {
-	background-color: #EEEEEE;
+	background-color: #0A9AAA;
 }
 
 #section2
 {
-	background-color: rgb(19,35,108);
+	background-color: #00509A;
 	padding-top: 0.5em;
 	padding-bottom: 3em;
 }
@@ -62,15 +62,31 @@ section {
 }
 
 #section3
-{	
+{
+	background-color: #FCF7F8;
+}
+
+#sponsors
+{
+	display: flex;	
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
+	padding:1em;
 }
+
+
+#sponsors img
+{
+	width: 15em;
+}
+
+
 #section5
 {
-	background-color: #EE00EE;	
+	background-color: #00509A;	
 }
 #section6 
 {
-	background-color: #EEEEEE;
+	background-color: #FCF7F8;
 }

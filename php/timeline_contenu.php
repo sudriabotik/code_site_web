@@ -11,7 +11,6 @@
 		{
 			echo 
 			'<li class="selected" data-date="'.$frep['date_event'].'">
-				<img src="img/'.$frep['image'].'">
 				<h2>'.$frep['titre'].'</h2>
 				<em>'.$frep['date_event'].'</em>
 				<p>'
@@ -24,7 +23,6 @@
 		{
 			echo 
 			'<li data-date="'.$frep['date_event'].'">
-				<img src="img/'.$frep['image'].'">
 				<h2>'.$frep['titre'].'</h2>
 				<em>'.$frep['date_event'].'</em>
 				<p>'

@@ -153,3 +153,27 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 }
+
+form
+{
+    float: left;
+    width: 5em;
+}
+
+.contact 
+{
+text-align: center;
+}
+
+text
+{
+    float: left;
+    float: top;
+    margin-left: 10em;
+}
+
+iframe
+{
+    float: bottom;
+    margin-left: 10em;
+}

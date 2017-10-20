@@ -29,7 +29,6 @@
 	    <link href="css/timeline.css" rel="stylesheet">
 	    <link href="css/widget.css" rel="stylesheet">
 	    <link href="css/equipe.css" rel="stylesheet">
-	    <link href="css/sponsors.css" rel="stylesheet">
 
 	    <!-- Animations -->
 	    <link href="css/animation-sponsors.css" rel= "stylesheet">
@@ -229,40 +228,38 @@
     	<!-- La classe content affiche le contenu de la page une fois chargée (voir loading.js) -->
     	<div class="content" style="display: none;">
 	    	<!-- Gère les 2 barres de navigation -->
-	        <nav>
-	        <div id="header">
-		        <div class="ligne1_nav">
-		        	<div class="reseaux_sociaux">
-		            	<a href="https://www.facebook.com/Sudriabotik?hc_ref=ARRGyqP-XPDqSMb2-b1u_s8mf5-BjeneZJQ9ekH9sWIgJ1JgO015qsnRriIPM40bpbA"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
-		            	<a href="https://twitter.com/sudriabotik"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
-		            	<a href="https://instagram.com/sudriabotik"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
-		            </div> <!-- .reseau_sociaux --><!-- Barre de navigation en haut de la page -->
-		        </div>
-		        <div class="ligne2_nav">
-		            <div class="nav_gauche">
-		               <a href="#section2">ABOUT US</a>
-		               <a href="#section3">SPONSORS</a>
-		            </div> <!-- .nav_gauche -->
+	    	<nav>
+	    		<!-- Barre de navigation en haut de la page -->
+		        <div id="header">
+			        <div class="ligne1_nav">
+			        	<div class="reseaux_sociaux">
+			            	<a href="https://www.facebook.com/Sudriabotik?hc_ref=ARRGyqP-XPDqSMb2-b1u_s8mf5-BjeneZJQ9ekH9sWIgJ1JgO015qsnRriIPM40bpbA"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+			            	<a href="https://twitter.com/sudriabotik"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+			            	<a href="https://instagram.com/sudriabotik"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+			            </div> <!-- .reseau_sociaux -->
+			        </div> <!-- .ligne1_nav -->
+			        <div class="ligne2_nav">
+			            <div class="nav_gauche">
+			               <a href="#section2">ABOUT US</a>
+			               <a href="#section3">SPONSORS</a>
+			            </div> <!-- .nav_gauche -->
 
-		            <div class="nav_centre">
-		                <img src = "img/logo_noir.png"/>
-		            </div> <!-- .nav_centre -->
+			            <div class="nav_centre">
+			                <img src = "img/logo_noir.png"/>
+			            </div> <!-- .nav_centre -->
 
-		            <div class="nav_droite">
-		                <a href="#section4">OUR TEAM</a>
-		                <a href="#section5">CONTACT</a>
-		            </div> <!-- .nav_droite -->
-		        </div>
-		    </div>
-
-
-
+			            <div class="nav_droite">
+			                <a href="#section4">OUR TEAM</a>
+			                <a href="#section5">CONTACT</a>
+			            </div> <!-- .nav_droite -->
+			        </div> <!-- ligne2_nav -->
+			    </div> <!-- .header -->
 
 	            <!-- Barre de navigation dynamique -->
 				<div class="navbar" id="navbar">
 					<div class="logo_nav">	
 						<a href="#header"><img src = "img/logo_blanc.png"/></a>
-					</div>
+					</div> <!-- .logo_nav -->
 					<div class="ancres_nav">
 						<div class="ancres1_nav">
 							<a href="#section2">ABOUT US</a>
@@ -271,53 +268,48 @@
 						    <a href="#section5">CONTACT</a>
 						</div>
 						<div class="ancres2_nav">
-							<div class = "facebook_nav"><a href="https://www.facebook.com/Sudriabotik?hc_ref=ARRGyqP-XPDqSMb2-b1u_s8mf5-BjeneZJQ9ekH9sWIgJ1JgO015qsnRriIPM40bpbA"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></div>
-			            	<div class = "twitter_nav"><a href="https://twitter.com/sudriabotik"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></div>
-			            	<div class = "instagram_nav"><a href="https://instagram.com/sudriabotik"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></div>
-						</div>
-					</div>
-					    
-					    
+							<div class = "facebook_nav"><a href="https://www.facebook.com/Sudriabotik?hc_ref=ARRGyqP-XPDqSMb2-b1u_s8mf5-BjeneZJQ9ekH9sWIgJ1JgO015qsnRriIPM40bpbA"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></div> <!-- .facebook_nav -->
+			            	<div class = "twitter_nav"><a href="https://twitter.com/sudriabotik"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></div> <!-- .twitter_nav -->
+			            	<div class = "instagram_nav"><a href="https://instagram.com/sudriabotik"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></div> <!-- instagram_nav -->
+						</div> <!-- .ancres2_nav -->
+					</div>	<!-- .ancres_nav -->    
 				</div> <!-- .navbar -->
-	        </nav>
+        	</nav>
 
-	        <!-- Introduction -->  
+	        <!-- Introduction --> 
 		    <section id = "section2" class='animatedParent' data-sequence='250'>
 		      	<h1>Qui sommes-nous ?</h1><br>
-		      	<div  class='animated fadeInLeft slow' data-id='1'> 
+		      	<div class='animated fadeInLeft slow' data-id='1'> 
 		      		<div class="text">
 		      			L'association Sudriabotik de l'ESME Sudria (loi 1901) a vu le jour en janvier 2001, remplaçant le club robotique créé en 1996. Son but est simple, permettre à des élèves dynamiques et motivés de notre école d'ingénieurs de se réunir et de réaliser un robot pour participer à la Coupe de France de Robotique.
-		      		</div><br></br>
-		      	</div>
-		      	<div  class='animated fadeInRight slow' data-id='1'> 
+		      		</div> <!-- .text -->
+		      		<br></br>
+		      	</div> <!-- .animated fadeInLeft slow  -->
+		      	<div  class='animated fadeInLeft slow' data-id='2'> 
 		      		<div class="text" >
 		      			Chaque année, tous les membres utilisent leur énergie et leur temps libre pour concevoir et réaliser ce projet : chacun partage son savoir avec les autres et le travail effectué permet de mettre en pratique les cours vus à l'école mais aussi de mieux comprendre notre futur métier d'ingénieur et même de découvrir des domaines hors de nos formations.
-		      		</div><br></br>
-		      	</div>
-		      	<div  class='animated fadeInLeft slow' data-id='1'> 
+		      		</div> <!-- .text -->
+		      		<br></br>
+		      	</div> <!-- .animated fadeInLeft slow  -->
+		      	<div  class='animated fadeInLeft slow' data-id='3'> 
 		      		<div class="text">
 		      			L'association comporte quatre départements : mécanique, électronique, communication et stratégie ; dont chaque chef de département répartit le travail entre les différents membres de l'équipe selon les motivations et les compétences. Le but est d'être le plus efficace possible : la réalisation de notre robot s'effectue en effet en parallèle avec nos études et les disponibilités de chacun varient.
-		      		</div>
-		      	</div>
-		      	
+		      		</div> <!-- .text -->
+		      	</div>	<!-- .animated fadeInLeft slow  -->
 		    </section> <!-- #section2 -->
-
-		    <!-- Timeline -->
-
-		    
+    
 		    <!-- Sponsors -->
 		    <section id = "section3" class='animatedParent' data-sequence='250'>
 		    	<h1>Nos sponsors</h1>
 		    	<div id="sponsors">
-			      	<div class="Elsys"><a href="http://www.elsys-design.com/en" ><img src="img/Elsys.png" class='animated fadeInLeft slow' data-id='1'></a></div>
-			      	<div class="Thales"><a href="https://www.thalesgroup.com" ><img src="img/Thales.png" class='animated fadeInLeft slow' data-id='2'></a></div>
-			      	<div class="Esme"><a href="http://www.esme.fr"><img src="img/Esme.png" class='animated fadeInLeft slow' data-id='1'></a></div>
-		      	</div>
-
+			      	<div class="Elsys"><a href="http://www.elsys-design.com/en" ><img src="img/Elsys.png" class='animated fadeInLeft slow' data-id='1'></a></div> <!-- .animated fadeInLeft slow  -->
+			      	<div class="Thales"><a href="https://www.thalesgroup.com" ><img src="img/Thales.png" class='animated fadeInLeft slow' data-id='2'></a></div> <!-- .animated fadeInLeft slow  -->
+			      	<div class="Esme"><a href="http://www.esme.fr"><img src="img/Esme.png" class='animated fadeInLeft slow' data-id='3'></a></div> <!-- .animated fadeInLeft slow  -->
+		      	</div> <!-- #sponsors -->
 		    </section> <!-- .section3 -->
-		    <!-- -->
+		    
 
-<!-- Timeline -->
+			<!-- Timeline -->
 		    <section id = "section1">
 		      	<section class="cd-horizontal-timeline">			
 					<div class="timeline">
@@ -344,6 +336,7 @@
 				</section> <!-- .cd-horizontal-timeline -->
 		    </section> <!-- #section1 -->
 
+		    <!-- Notre équipe --> 
 		    <section id = "section4">
 		    	<div class="wrapper">
 					  <h1>Notre équipe</h1>
@@ -461,9 +454,8 @@
 									</div>
 								</div>
 							</div>
-					 </div>
-		      	
-		    </section> <!-- .section3 -->
+					 </div> <!-- .cols --> 	
+		    </section> <!-- .section4 -->
 
 		    <!-- Formulaire -->
 		    <section id = "section5">
@@ -474,6 +466,13 @@
 					<textarea id="message" name="message" type="text" placeholder="MESSAGE" required></textarea>
 		  			<input id="submit" name="envoi" type="submit" value="GO!">
 		  		</form>
+		  		<text>
+		  		<h1 clas= "contact"> Nous contacter :</br>
+		  		 sudriabotik@gmail.com </br>
+		  		 38 rue Molière </br>
+		  		 94200 Ivry Sur Seine - FRANCE </br><h1>
+
+		  		</text>
 		  		<iframe
 				  width="300"
 				  height="225"

@@ -13,9 +13,7 @@
 			'<li class="selected" data-date="'.$frep['date_event'].'">
 				<h2>'.$frep['titre'].'</h2>
 				<em>'.$frep['date_event'].'</em>
-				<p>'
-					.$frep['article'].
-				'</p>
+				'.$frep['article'].'
 			</li>';
 			$count++;
 		}
@@ -25,9 +23,7 @@
 			'<li data-date="'.$frep['date_event'].'">
 				<h2>'.$frep['titre'].'</h2>
 				<em>'.$frep['date_event'].'</em>
-				<p>'
-					.$frep['article'].
-				'</p>
+				'.$frep['article'].'
 			</li>';
 		}
 	}

@@ -175,5 +175,5 @@ text
 iframe
 {
     float: bottom;
-    margin-left: 10em;
+    /*margin-left: 10em;*/
 }

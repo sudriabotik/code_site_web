@@ -2,7 +2,7 @@
 	//On importe la base de donnée "data" depuis mysql. UTF-8 , identifiant et mot de passe.
 	$bddBotik = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', '');
 	// On affiche toutes les données dates disponibles du tableau sudriabotik, de la colonne date_event.
-	$rep = $bddBotik->query('SELECT * FROM sudriabotik ORDER BY date_event DESC');
+	$rep = $bddBotik->query('SELECT * FROM sudriabotik ORDER BY english_date');
 	$count = 0; //Ce compteur permet d'attribuer la classe "selected" au premier élément chargé.
 	while($frep = $rep->fetch())
 	{

@@ -51,25 +51,7 @@ Main Components
   margin: 0 40px;
   overflow: hidden;
 }
-/*.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
-   these are used to create a shadow effect at the sides of the timeline */
-  /*content: '';
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  height: 100%;
-  width: 20px;
-}
- .cd-horizontal-timeline .events-wrapper::before {
-  left: 0;
-  background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
-}
-.cd-horizontal-timeline .events-wrapper::after {
-  right: 0;
-  background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
-}*/
+
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */
   position: absolute;
@@ -78,7 +60,7 @@ Main Components
   top: 49px;
   height: 2px;
   /* width will be set using JavaScript */
-  background: #dfdfdf;
+  background: white;
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
@@ -91,7 +73,7 @@ Main Components
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #7b9d6f;
+  background-color: #00509A;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -113,7 +95,7 @@ Main Components
   text-align: center;
   font-size: 1.3rem;
   padding-bottom: 15px;
-  color: #383838;
+  color: white;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -136,25 +118,25 @@ Main Components
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  border: 2px solid #dfdfdf;
-  background-color: #f8f8f8;
+  border: 2px solid white;
+  background-color: white;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #87E3D7;
-  border-color: #87E3D7;
+  background-color: #FF00FF;
+  border-color: #FF00FF;
 }
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #87E3D7;
-  border-color: #87E3D7;
+  background-color: #00509A;
+  border-color: #00509A;
 }
 .cd-horizontal-timeline .events a.older-event::after {
-  border-color: #87E3D7;
+  border-color: #00509A;
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
@@ -180,7 +162,7 @@ Main Components
   height: 34px;
   width: 34px;
   border-radius: 50%;
-  border: 2px solid #87E3D7;
+  border: 2px solid white;
   /* replace text with an icon */
   overflow: hidden;
   color: transparent;
@@ -194,8 +176,8 @@ Main Components
   /* arrow icon */
   content: '';
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 15px;
+  width: 15px;
   left: 50%;
   top: 50%;
   bottom: auto;
@@ -219,7 +201,7 @@ Main Components
   right: 0;
 }
 .no-touch .cd-timeline-navigation a:hover {
-  border-color: #87E3D7;
+  border-color: #FF00FF;
 }
 .cd-timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -227,8 +209,8 @@ Main Components
 .cd-timeline-navigation a.inactive::after {
   background-position: 0 -16px;
 }
-.no-touch .cd-timeline-navigation a.inactive:hover {
-  border-color: #dfdfdf;
+.no-touch .cd-timeline-navigation a .inactive:hover {
+  border-color: #FF00FF;
 }
 
 .cd-horizontal-timeline .events-content {
@@ -292,26 +274,35 @@ Main Components
 }
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
-  font-size: 2.6rem;
+  font-size: 1px;
   font-family: 'quicksand', serif;
-  font-weight: 700;
-  line-height: 1.2;
+  margin-right: 5em;
+  margin-left: 5em;
+  width: auto;
 }
 .cd-horizontal-timeline .events-content em {
   display: block;
   font-style: italic;
-  margin: 1em;
-  max-width: 90%;
+  width:auto;
+  margin-right:5em;
 }
 .cd-horizontal-timeline .events-content em::before {
   content: '- ';
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 1.4rem;
-  color: #87E3D7;
+  color: black;
   margin: 1em;
   max-width: 90%;
 }
+
+.cd-horizontal-timeline .events-content ul {
+  font-size: 1.4rem;
+  color: black;
+  margin: 1em;
+  width: 100%;
+}
+
 .cd-horizontal-timeline .events-content li img {
   position: relative;
   width: 100%;
@@ -325,13 +316,19 @@ Main Components
 }
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
-    font-size: 7rem;
+    font-size: 3em;
+    text-align: center;
   }
   .cd-horizontal-timeline .events-content em {
-    font-size: 2rem;
+    font-size: 1em;
+    text-align: right;
   }
   .cd-horizontal-timeline .events-content p {
-    font-size: 1.8rem;
+    font-size: 1.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    width: auto;
+    text-align: justify;
   }
 }
 

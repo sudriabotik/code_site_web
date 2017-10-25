@@ -458,7 +458,7 @@
 		    </section> <!-- .section4 -->
 
 		    <!-- Formulaire -->
-		    <section id = "section5">
+		    <section id = "section5" style = "display: none;">
 				<form id="form" method="post" class="topBefore" action="php/traitement_formulaire.php">
 					<input id="nom" name="nom" type="text" placeholder="NOM / ASSOCIATION" required>
 					<input id="objet" name="objet" type="text" placeholder="OBJET" required>
@@ -519,7 +519,7 @@
 			  		</div> <!-- .widget #twitter -->
 			  			
 			  		<!-- Widget Instagram -->
-			  		<div class="widget" id = "instagram" style="display: none;">
+			  		<div class="widget" id = "instagram">
 				  		<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7">
 			  				<div class="instagram1"> 
 			  					<div class = "instagram2"></div> <!-- .instagram2 -->	

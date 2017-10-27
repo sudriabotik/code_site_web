@@ -155,22 +155,21 @@ nav
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100em;
+	width: 100%;
 	align-items: center;
 }
 
 .ancres1_nav
 {
-	width:60em;
+	width:75%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
 
 .ancres2_nav
 {
-	width: 10em;
+	width: 10%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

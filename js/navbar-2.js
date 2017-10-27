@@ -7,7 +7,7 @@
   $(function () {
     $(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
-      if ($(this).scrollTop() > 5) {
+      if ($(this).scrollTop() > 100) {
         $('.navbar').removeClass('shrink');
       } else {
         $('.navbar').addClass('shrink');

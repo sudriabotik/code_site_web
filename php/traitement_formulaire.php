@@ -79,11 +79,17 @@
 	 
 			if ($num_emails == 1)
 			{
-				echo '<p>'.$message_envoye.'</p>';
+				echo '<script type=text"text/javascript">
+				alert("Votre message a bien été envoyé");
+				windows.location.href="../index.php#section5";
+				</script>';
 			}
 			else
 			{
-				echo '<p>'.$message_non_envoye.'</p>';
+				echo '<script type=text"text/javascript">
+				alert("Votre message ne nous est pas parvenu.");
+				windows.location.href="../index.php#section5";
+				</script>';
 			};
 		}
 	}; // fin du if (!isset($_POST['envoi']))

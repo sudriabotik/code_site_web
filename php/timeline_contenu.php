@@ -18,7 +18,6 @@
 				<p>'.$frep['article'].'</p>
 				<p>'.$frep['matchs'].'</p>
 				<p>'.$frep['president'].'</p>
-				<p>'.$frep['lien'].'</p>
 			</li>';
 			$count++;
 		}
@@ -33,7 +32,6 @@
 				<p>'.$frep['article'].'</p>
 				<p>'.$frep['matchs'].'</p>
 				<p>'.$frep['president'].'</p>
-				<p>'.$frep['lien'].'</p>
 			</li>';
 		}
 	}

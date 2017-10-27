@@ -458,37 +458,50 @@
 		    </section> <!-- .section4 -->
 
 		    <!-- Formulaire -->
-		    <section id = "section5" style = "display: none;">
-				<form id="form" method="post" class="topBefore" action="php/traitement_formulaire.php">
-					<input id="nom" name="nom" type="text" placeholder="NOM / ASSOCIATION" required>
-					<input id="objet" name="objet" type="text" placeholder="OBJET" required>
-					<input id="email" name="email" type="email" placeholder="E-MAIL" required>
-					<textarea id="message" name="message" type="text" placeholder="MESSAGE" required></textarea>
-		  			<input id="submit" name="envoi" type="submit" value="GO!">
-		  		</form>
-		  		<text>
-		  		<h1 clas= "contact"> Nous contacter :</br>
-		  		 sudriabotik@gmail.com </br>
-		  		 38 rue Molière </br>
-		  		 94200 Ivry Sur Seine - FRANCE </br><h1>
+		    <section id = "section5">
+		    	<div class="partie1_5">
+		    			<h1> Nous contacter </h1>
+		    	</div>
+		    	<div class="partie2_5">
+		    			<div class="partie21_5">
+							<form id="form" method="post" class="topBefore" action="php/traitement_formulaire.php">
+								<input id="nom" name="nom" type="text" placeholder="NOM / ASSOCIATION" required>
+								<input id="objet" name="objet" type="text" placeholder="OBJET" required>
+								<input id="email" name="email" type="email" placeholder="E-MAIL" required>
+								<textarea id="message" name="message" type="text" placeholder="MESSAGE" required></textarea>
+				  				<input id="submit" name="envoi" type="submit" value="GO!">
+				  			</form>
+				  		</div>
+				  		<div class="partie22_5">
+				  			<div class="partie221_5">
+			  					sudriabotik@gmail.com </br></br>
+		  		 				38 rue Molière </br>
+		  		 				94200 Ivry Sur Seine - FRANCE </br></br></br>
+		  		 			</div>
+		  		 			<div class="partie222_5">
+								<iframe
+				  					width="300"
+				  					height="225"
+					  				frameborder="0"
 
-		  		</text>
-		  		<iframe
-				  width="300"
-				  height="225"
-				  frameborder="0"
+					  				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC1J7ARM26H48ztuuPDe3Iq2mpfL83Rrug
+					   				&q=ESME%20Sudria%20Brandebourg
+					    			&zoom=17
+	  								&attribution_source=Google+Maps+Embed+API
+	  								&attribution_web_url=http://http://www.sudriabotik.fr/
+	  								&attribution_ios_deep_link_id=comgooglemaps://?daddr=ESME%20Sudria%20Brandebourg">
+								</iframe>
+		  		 			</div>
+		  		 		</div>
+		  		 </div>
 
-				  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC1J7ARM26H48ztuuPDe3Iq2mpfL83Rrug
-				    &q=ESME%20Sudria%20Brandebourg
-				    &zoom=17
-  					&attribution_source=Google+Maps+Embed+API
-  					&attribution_web_url=http://http://www.sudriabotik.fr/
-  					&attribution_ios_deep_link_id=comgooglemaps://?daddr=ESME%20Sudria%20Brandebourg">
-				</iframe>
+
+		  		
 			</section> <!-- #section5 -->
 			
 			<!-- Widget -->
 			<section id = "section6">
+				<h1> Rejoignez-nous sur les réseaux sociaux ! </h1>
 				<div class="widget_place">
 					<!-- Widget Facebook -->
 					<div id="fb-root"></div> <!-- .fb-root -->

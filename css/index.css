@@ -82,12 +82,34 @@ section {
 	width: 15em;
 }
 
-
 #section5
 {
-	background-color: #00509A;	
+	background-color: #00509A;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 #section6 
 {
-	background-color: #00509A;
+	background-color: #0A9AAA;
+}
+
+.partie2_5
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.partie22_5
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.partie221_5
+{
+	font-size: 20px;
+	text-align: center;
 }

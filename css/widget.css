@@ -4,23 +4,20 @@
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-
+	align-items: center;
 }
 
-.widget
+
+#facebook
 {
-	padding: 1.5em;
+	width: auto;
 }
 
-/*#facebook
+#fb-root
 {
-	display: inline-flex;
+	display: none;
 }
 
-#twitter{
-	display: inline-flex;
-}
-*/
 #instagram .instagram1
 {
 	background:#F8F8F8;
@@ -79,4 +76,9 @@
 	font-family:Arial,sans-serif; 
 	font-size:14px; 
 	line-height:17px;
+}
+
+#section6
+{
+	padding-top: 3em;
 }

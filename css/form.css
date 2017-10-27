@@ -108,8 +108,7 @@ input:hover {
 textarea {
   width: 470px;
   max-width: 470px;
-  height: 110px;
-  max-height: 110px;
+  height: 100px;
   padding: 15px;
   
   background: transparent;

@@ -240,16 +240,16 @@
 			        </div> <!-- .ligne1_nav -->
 			        <div class="ligne2_nav">
 			            <div class="nav_gauche">
-			               <a href="#section2">ABOUT US</a>
+			               <a href="#section2">À PROPOS</a>
 			               <a href="#section3">SPONSORS</a>
 			            </div> <!-- .nav_gauche -->
 
 			            <div class="nav_centre">
-			                <img src = "img/logo_noir.png"/>
+			                <img src = "img/logo_blanc.png"/>
 			            </div> <!-- .nav_centre -->
 
 			            <div class="nav_droite">
-			                <a href="#section4">OUR TEAM</a>
+			                <a href="#section4">L'ÉQUIPE</a>
 			                <a href="#section5">CONTACT</a>
 			            </div> <!-- .nav_droite -->
 			        </div> <!-- ligne2_nav -->
@@ -262,9 +262,9 @@
 					</div> <!-- .logo_nav -->
 					<div class="ancres_nav">
 						<div class="ancres1_nav">
-							<a href="#section2">ABOUT US</a>
+							<a href="#section2">À PROPOS</a>
 						    <a href="#section3">SPONSORS</a>
-						    <a href="#section4">OUR TEAM</a>
+						    <a href="#section4">L'ÉQUIPE</a>
 						    <a href="#section5">CONTACT</a>
 						</div>
 						<div class="ancres2_nav">
@@ -277,7 +277,7 @@
         	</nav>
 
 	        <!-- Introduction --> 
-		    <section id = "section2" class='animatedParent' data-sequence='250'>
+		    <section id = "section2" class='animatedParent animateOnce' data-sequence='250'>
 		      	<h1>Qui sommes-nous ?</h1><br>
 		      	<div class='animated fadeInLeft slow' data-id='1'> 
 		      		<div class="text">
@@ -299,7 +299,7 @@
 		    </section> <!-- #section2 -->
     
 		    <!-- Sponsors -->
-		    <section id = "section3" class='animatedParent' data-sequence='250'>
+		    <section id = "section3" class='animatedParent animateOnce' data-sequence='250'>
 		    	<h1>Nos sponsors</h1>
 		    	<div id="sponsors">
 			      	<div class="Elsys"><a href="http://www.elsys-design.com/en" ><img src="img/Elsys.png" class='animated fadeInLeft slow' data-id='1'></a></div> <!-- .animated fadeInLeft slow  -->
@@ -307,162 +307,178 @@
 			      	<div class="Esme"><a href="http://www.esme.fr"><img src="img/Esme.png" class='animated fadeInLeft slow' data-id='3'></a></div> <!-- .animated fadeInLeft slow  -->
 		      	</div> <!-- #sponsors -->
 		    </section> <!-- .section3 -->
-		    
 
 			<!-- Timeline -->
-		    <section id = "section1">
-		      	<section class="cd-horizontal-timeline">			
-					<div class="timeline">
-						<div class="events-wrapper">
-							<div class="events">
-								<ol>							
-									<!-- Ce script PHP charge toute les dates dans la timeline en utilisant le tableau SQL -->	
-									<?php include('php/timeline_dates.php'); ?>
-								</ol>
-								<span class="filling-line" aria-hidden="true"></span>
-							</div> <!-- .events -->
-						</div> <!-- .events-wrapper -->	
-						<ul class="cd-timeline-navigation">
-							<li><a href="#0" class="prev inactive">Prev</a></li>
-							<li><a href="#0" class="next">Next</a></li>
-						</ul> <!-- .cd-timeline-navigation -->
-					</div> <!-- .timeline -->
-					<div class="events-content">
-						<ol>
-							<!-- Ce script PHP permet de charger toutes les pages de la timeline -->
-							<?php include('php/timeline_contenu.php'); ?>	
-						</ol>
-					</div> <!-- .events-content -->
-				</section> <!-- .cd-horizontal-timeline -->
+		    <section id = "section1" class='animatedParent animateOnce'>
+		      	<div class='animated fadeInUp'>
+			      	<section class="cd-horizontal-timeline">			
+						<div class="timeline">
+							<div class="events-wrapper">
+								<div class="events">
+									<ol>							
+										<!-- Ce script PHP charge toute les dates dans la timeline en utilisant le tableau SQL -->	
+										<?php include('php/timeline_dates.php'); ?>
+									</ol>
+									<span class="filling-line" aria-hidden="true"></span>
+								</div> <!-- .events -->
+							</div> <!-- .events-wrapper -->	
+							<ul class="cd-timeline-navigation">
+								<li><a href="#0" class="prev inactive">Prev</a></li>
+								<li><a href="#0" class="next">Next</a></li>
+							</ul> <!-- .cd-timeline-navigation -->
+						</div> <!-- .timeline -->
+						<div class="events-content">
+							<ol>
+								<!-- Ce script PHP permet de charger toutes les pages de la timeline -->
+								<?php include('php/timeline_contenu.php'); ?>	
+							</ol>
+						</div> <!-- .events-content -->
+					</section> <!-- .cd-horizontal-timeline -->
+				</div> <!-- .animated fadeInUp -->
 		    </section> <!-- #section1 -->
 
-		    <!-- Notre équipe --> 
-		    <section id = "section4">
+		    <!-- Notre équipe -->
+		    <section id = "section4" class='animatedParent animateOnce' data-sequence='50'>
 		    	<div class="wrapper">
-					  <h1>Notre équipe</h1>
-					  <div class="cols">
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Georges CORBINEAU</p>
-					              <span>Président</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-											  <p>4e année à l'ESME Sudria </p>
-											  <span><br>2 ans à Sudriabotik</span>
-											</div>
+					<h1>Notre équipe</h1>
+					<div class="cols">
+						<div class="col">
+							<div class='animated flipInY' data-id='1'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/pres.jpg)">
+										<div class="inner">
+											<p>Georges CORBINEAU</p>
+				              				<span>Président</span>
 										</div>
 									</div>
-								</div>
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Hanako AUDRY</p>
-					              <span>Vice-présidente <br>&<br>Responsable mécanique</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-												<p>4e année à l'ESME Sudria</p>
-												<span><br>3 ans à Sudriabotik</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Pierre WILS</p>
-					              <span>Trésorier</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-												<p>1ère année à l'ESME Sudria </p>
-												<span><br>2 ans à Sudriabotik </span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Florence PASCUAL</p>
-					              <span>Secrétaire</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-												<p>4e année à l'ESME Sudria </p>
-												<span><br>2 ans à Sudriabotik </span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Quentin CHOPINET</p>
-					              <span>Responsable électronique</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-												<p>4e année à l'ESME Sudria </p>
-												<span><br>1 an à Sudriabotik</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Nicolas GAIGE</p>
-					              <span>Responsable informatique</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-												<p>4e année à l'ESME Sudria </p>
-												<span><br>1 an à Sudriabotik </span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="container3">
-										<div class="front" style="background-image: url(img/logo_noir.png)">
-											<div class="inner">
-												<p>Mathilde STAEHLE</p>
-					              <span>Responsable communication</span>
-											</div>
-										</div>
-										<div class="back">
-											<div class="inner">
-												<p>4e année à l'ESME Sudria </p>
-												<span><br>1 an à Sudriabotik </span>
-											</div>
+									<div class="back">
+										<div class="inner">
+										  <p>4e année à l'ESME Sudria </p>
+										  <span><br>2 ans à Sudriabotik</span>
 										</div>
 									</div>
 								</div>
 							</div>
-					 </div> <!-- .cols --> 	
+						</div>
+						<div class="col">
+							<div class='animated flipInY' data-id='2'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/vice_pres.jpg)">
+										<div class="inner">
+											<p>Hanako AUDRY</p>
+				              				<span>Vice-présidente <br>&<br>Responsable mécanique</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>4e année à l'ESME Sudria</p>
+											<span><br>3 ans à Sudriabotik</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class='animated flipInY' data-id='3'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/tresorier.jpg)">
+										<div class="inner">
+											<p>Pierre WILS</p>
+				             				<span>Trésorier</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>1ère année à l'ESME Sudria </p>
+											<span><br>2 ans à Sudriabotik </span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class='animated flipInY' data-id='4'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/secretaire.jpg)">
+										<div class="inner">
+											<p>Florence PASCUAL</p>
+				              				<span>Secrétaire</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>4e année à l'ESME Sudria </p>
+											<span><br>2 ans à Sudriabotik </span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class='animated flipInY' data-id='5'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/respelec.jpg)">
+										<div class="inner">
+											<p>Quentin CHOPINET</p>
+				              				<span>Responsable électronique</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>4e année à l'ESME Sudria </p>
+											<span><br>1 an à Sudriabotik</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class='animated flipInY' data-id='6'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/respinfo.jpg)">
+										<div class="inner">
+											<p>Nicolas GAIGE</p>
+				              				<span>Responsable informatique</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>4e année à l'ESME Sudria </p>
+											<span><br>1 an à Sudriabotik </span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class='animated flipInY' data-id='7'>
+								<div class="container3">
+									<div class="front" style="background-image: url(img/respcom.jpg)">
+										<div class="inner">
+											<p>Mathilde STAEHLE</p>
+				              				<span>Responsable communication</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>4e année à l'ESME Sudria </p>
+											<span><br>1 an à Sudriabotik </span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			 	</div> <!-- .cols --> 	
 		    </section> <!-- .section4 -->
 
 		    <!-- Formulaire -->
-		    <section id = "section5">
+		    <section id = "section5" class='animatedParent animateOnce'>
 		    	<div class="partie1_5">
 		    			<h1> Nous contacter </h1>
 		    	</div>
-		    	<div class="partie2_5">
+		    	<div class='animated fadeIn'>
+			    	<div class="partie2_5">
 		    			<div class="partie21_5">
 							<form id="form" method="post" class="topBefore" action="php/traitement_formulaire.php">
 								<input id="nom" name="nom" type="text" placeholder="NOM / ASSOCIATION" required>
@@ -493,62 +509,65 @@
 								</iframe>
 		  		 			</div>
 		  		 		</div>
-		  		 </div>
-
-
-		  		
+		  		 	</div>
+		  		 </div>	  		
 			</section> <!-- #section5 -->
 			
 			<!-- Widget -->
-			<section id = "section6">
+			<section id = "section6" class='animatedParent animateOnce'>
 				<h1> Rejoignez-nous sur les réseaux sociaux ! </h1>
 				<div class="widget_place">
 					<!-- Widget Facebook -->
 					<div id="fb-root"></div> <!-- .fb-root -->
-					<div class="widget" id = "facebook">
-				  		<div class="fb-page" 
-				  		data-href="https://www.facebook.com/Sudriabotik-1700485860246021/" 
-				  		data-tabs="timeline" 
-				  		data-small-header="false" 
-				  		data-adapt-container-width="true" 
-				  		data-hide-cover="false" 
-				  		data-show-facepile="true">
-				  			<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-				  				<a href="https://www.facebook.com/facebook">Facebook</a>
-				  			</blockquote> <!-- .fb-xfbml-parse-ignore -->
-				  		</div> <!-- .fb-page -->
-			  		</div> <!-- .widget #facebook -->
+					<div class='animated fadeIn'>
+						<div class="widget" id = "facebook">
+					  		<div class="fb-page" 
+					  		data-href="https://www.facebook.com/Sudriabotik-1700485860246021/" 
+					  		data-tabs="timeline" 
+					  		data-small-header="false" 
+					  		data-adapt-container-width="true" 
+					  		data-hide-cover="false" 
+					  		data-show-facepile="true">
+					  			<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+					  				<a href="https://www.facebook.com/facebook">Facebook</a>
+					  			</blockquote> <!-- .fb-xfbml-parse-ignore -->
+					  		</div> <!-- .fb-page -->
+				  		</div> <!-- .widget #facebook -->
+				  	</div>
 			  		<!-- Widget Twitter -->
-			  		<div class="widget" id = "twitter">
-				  		<blockquote class="twitter-tweet">
-				  			<p lang="fr" dir="ltr">Le nouveau règlement 2018 est désormais disponible en version BETA sur le site web de la coupe 
-				  				<a href="https://twitter.com/hashtag/CDR2018?src=hash&amp;ref_src=twsrc%5Etfw">#CDR2018</a> 
-				  				<a href="https://t.co/b7Bk8be9fn">https://t.co/b7Bk8be9fn</a> 
-				  				<a href="https://t.co/dEcSya1OK0">pic.twitter.com/dEcSya1OK0</a>
-				  			</p>&mdash; Coupe de Robotique (@CoupeRobotique) 
-				  			<a href="https://twitter.com/CoupeRobotique/status/911902574961467392?ref_src=twsrc%5Etfw">September 24, 2017</a>
-				  		</blockquote>  <!-- .twitter-tweet -->
-				  		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			  		</div> <!-- .widget #twitter -->
-			  			
+			  		<div class='animated fadeIn'>
+				  		<div class="widget" id = "twitter">
+					  		<blockquote class="twitter-tweet">
+					  			<p lang="fr" dir="ltr">Le nouveau règlement 2018 est désormais disponible en version BETA sur le site web de la coupe 
+					  				<a href="https://twitter.com/hashtag/CDR2018?src=hash&amp;ref_src=twsrc%5Etfw">#CDR2018</a> 
+					  				<a href="https://t.co/b7Bk8be9fn">https://t.co/b7Bk8be9fn</a> 
+					  				<a href="https://t.co/dEcSya1OK0">pic.twitter.com/dEcSya1OK0</a>
+					  			</p>&mdash; Coupe de Robotique (@CoupeRobotique) 
+					  			<a href="https://twitter.com/CoupeRobotique/status/911902574961467392?ref_src=twsrc%5Etfw">September 24, 2017</a>
+					  		</blockquote>  <!-- .twitter-tweet -->
+					  		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				  		</div> <!-- .widget #twitter -->
+				  	</div>
 			  		<!-- Widget Instagram -->
-			  		<div class="widget" id = "instagram">
-				  		<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7">
-			  				<div class="instagram1"> 
-			  					<div class = "instagram2"></div> <!-- .instagram2 -->	
-			  				</div> <!-- .instagram1 -->
-			  				<p class="p1"> 
-			  					<a href="https://www.instagram.com/p/BaJ9OgPFovC/" target="_blank">
-			  						En chantier :) !
-			  					</a>
-			  				</p> <!-- .p1 -->
-			  				<p class = "p2">
-			  					Une publication partagée par Sudriabotik (@sudriabotik) le 
-			  					<time datetime="2017-10-12T17:00:40+00:00">12 Oct. 2017 à 10h00 PDT</time>
-			  				</p> <!-- .p2 -->
-				  		</blockquote> <!-- .instagram-media -->
-				  		<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-			  		</div> <!-- .widget #instagram -->
+			  		<div class='animated fadeIn'>
+				  		<div class="widget" id = "instagram">
+					  		<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7">
+				  				<div class="instagram1"> 
+				  					<div class = "instagram2"></div> <!-- .instagram2 -->	
+				  				</div> <!-- .instagram1 -->
+				  				<p class="p1"> 
+				  					<a href="https://www.instagram.com/p/Bat6XYDFWAA/" target="_blank">
+				  						Ce soir c&#39;est réunion de stratégie ! Nous réfléchissons ensemble à la façon dont nous allons gagner le plus de points. Ainsi, nous cherchons la mécanique idéale pour attraper le plus de points possible.
+				  					</a>
+				  				</p> <!-- .p1 -->
+				  				<p class = "p2">
+				  					Une publication partagée par Sudriabotik (@sudriabotik) le
+				  					<time datetime="2017-10-26T16:08:19+00:00">26 Oct. 2017 à 9h08 PDT</time>
+				  				</p> <!-- .p2 -->
+					  		</blockquote> <!-- .instagram-media -->
+					  		<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+				  		</div> <!-- .widget #instagram -->
+				  	</div>
 		  		</div>
 		    </section> <!-- #section6 -->
 		

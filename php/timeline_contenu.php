@@ -5,9 +5,10 @@
 	$rep = $bddBotik->query('SELECT * FROM sudriabotik ORDER BY english_date');
 	//On affiche pour chaques évenement: son image, son titre, sa date et l'article associé.
 	$count = 0; //Ce compteur permet d'attribuer la classe "selected" au premier élément chargé.
+	$today = date("Y-m-d");
 	while($frep = $rep->fetch())
 	{
-		if($count == 0)
+		if(($today <= $frep['english_date']) && ($count == 0))
 		{
 			echo 
 			'<li class="selected" data-date="'.$frep['date_event'].'">

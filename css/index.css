@@ -12,17 +12,6 @@ body {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: 'quicksand';
-
-}
-
-.content {
-
-	background-image:url("../img/robot.jpg");
-	image-rendering: auto;
-	background-size: cover;
-	background-attachment:fixed;
-	background-repeat:no-repeat;
-	
 }
 
 section {

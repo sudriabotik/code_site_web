@@ -579,16 +579,12 @@
 		    
 		    <script src="js/navbar-2.js"></script> <!-- Deuxième barre de navigation -->
 		    <script src="js/timeline.js"></script> <!-- Resource jQuery pour la timeline -->
-
-
-			<!-- Glissement de la page avec les ancres -->
-			<script type="text/javascript" src="js/scroll.js"></script>
+		    <script src="js/jquery.nicescroll.min.js"></script> <!-- Ressource pour le skin de la barre de scrolling verticale -->
+		    <script src="js/niceScroll.js"></script> <!-- Ressource pour le skin du scroll vertical -->
+			<script type="text/javascript" src="js/scroll.js"></script> <!-- Glissement de la page avec les ancres -->
+			<script type="text/javascript" src="js/loading.js"></script> <!-- Page de chargement -->
+			<script src="js/animation-sponsors.js"></script><!-- Script apparition au scroll -->
 			
-			<!-- Page de chargement -->
-			<script type="text/javascript" src="js/loading.js"></script>
-
-			<!-- Script apparition au scroll -->
-			<script src="js/animation-sponsors.js"></script>
 
 		</div> <!-- .content -->
 	</body>

@@ -217,6 +217,7 @@ Main Components
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
+  height: 100%;
   margin: auto;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -275,7 +276,6 @@ Main Components
 }
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
-  font-size: 1px;
   font-family: 'quicksand', serif;
   margin-right: 5em;
   margin-left: 5em;

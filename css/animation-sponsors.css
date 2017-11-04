@@ -920,25 +920,6 @@
     animation-name: wobble; 
 }
 
-/********
-* pulse *
-*********/
-
-@-webkit-keyframes pulse { 
-    0% { -webkit-transform: scale(1); } 
-    50% { -webkit-transform: scale(1.1); } 
-    100% { -webkit-transform: scale(1); } 
-} 
-@keyframes pulse { 
-    0% { transform: scale(1); } 
-    50% { transform: scale(1.1); } 
-    100% { transform: scale(1); } 
-} 
-.pulse.go { 
-    -webkit-animation-name: pulse; 
-    animation-name: pulse; 
-}
-
 /***************
 * lightSpeedInRight *
 ****************/

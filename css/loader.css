@@ -1,11 +1,11 @@
-.loader{
-	width: 100%;
-	height: 100vh;
-	z-index: 5;
+.socket{
+	width: 200px;
+	height: 200px;
 	position: absolute;
-	left: 0;
-	top: 0;
-
+	left: 50%;
+	margin-left: -100px;
+	top: 50%;
+	margin-top: -100px;
 }
 
 .hex-brick{

@@ -1,0 +1,53 @@
+.btn-bg.bg-3 {
+  position: relative; /* postulat de départ */
+  margin-left: 50%; /* à 50%/50% du parent référent */
+  margin-top: 10%;
+  transform: translate(-50%, -50%);
+}
+.btn-bg.bg-3 .btn-3 button {
+  color: #000;
+  background: #0A9AAA;
+  border: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.btn-bg.bg-3 .btn-3 button:hover {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  background: transparent;
+  color: #fff;
+}
+.btn-bg.bg-3 .btn-3 button:hover:after {
+  transition: all 0.3s ease;
+  width: 100%;
+  left: 0;
+}
+.btn-bg.bg-3 .btn-3 button:after {
+  position: absolute;
+  transition: all 0.3s ease;
+  content: '';
+  width: 0;
+  bottom: 0;
+  left: inherit;
+  right: 0;
+  height: 3px;
+  background: #f6f7c5;
+}
+
+button {
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  position: relative;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 1rem 3rem 1rem 3rem;
+  text-transform: uppercase;
+  font-family: "quicksand";
+  font-size: 1.5em;
+}
+
+button a {
+  text-decoration: none;
+}

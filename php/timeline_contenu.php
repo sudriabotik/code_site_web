@@ -12,28 +12,70 @@
 		{
 			echo 
 			'<li class="selected" data-date="'.$frep['date_event'].'">
-				<h2>'.$frep['titre'].'</h2>
-				<em>'.$frep['date_event'].'</em>
-				<em>'.$frep['dates cr'].'</em>
-				<p>'.$frep['classement'].'</p>
-				<p>'.$frep['article'].'</p>
-				<p>'.$frep['matchs'].'</p>
-				<p>'.$frep['president'].'</p>
-			</li>';
+				<div class="timeline_resume">
+					<h2>'.$frep['titre'].'</h2>
+					<em>'.$frep['date_event'].'</em>
+					<em>'.$frep['dates cr'].'</em>
+					<p>'.$frep['classement'].'</p>
+					<p>'.$frep['article'].'</p>
+					<p>'.$frep['president'].'</p>
+				</div>';
+			if($frep['dates cr'] != NULL)
+			{
+				echo'
+				<div class="timeline_resume">
+					<div class="btn-bg bg-3">
+	    				<div class="btn btn-3">
+	      					<button onclick="affichage(`'.$frep['intitule2'].'`)">En savoir plus</button>
+	    				</div>
+	  				</div>
+  				</div>
+	  			<div class ="'.$frep['intitule2'].'" style="display: none;">';
+	  				require "html/".$frep['intitule'].".html";
+	  			echo '
+	  				<div class="btn-bg bg-3">
+	    				<div class="btn btn-3">
+	      					<button onclick="effacement(`'.$frep['intitule2'].'`)">Précédent</button>
+	    				</div>
+	  				</div>
+	  			</div>';
+			}
+			echo '</li>';
 			$count++;
 		}
 		else
 		{
 			echo 
 			'<li data-date="'.$frep['date_event'].'">
-				<h2>'.$frep['titre'].'</h2>
-				<em>'.$frep['date_event'].'</em>
-				<em>'.$frep['dates cr'].'</em>
-				<p>'.$frep['classement'].'</p>
-				<p>'.$frep['article'].'</p>
-				<p>'.$frep['matchs'].'</p>
-				<p>'.$frep['president'].'</p>
-			</li>';
+				<div class="timeline_resume">
+					<h2>'.$frep['titre'].'</h2>
+					<em>'.$frep['date_event'].'</em>
+					<em>'.$frep['dates cr'].'</em>
+					<p>'.$frep['classement'].'</p>
+					<p>'.$frep['article'].'</p>
+					<p>'.$frep['president'].'</p>
+				</div>';
+			if($frep['dates cr'] != NULL)
+			{
+				echo'
+				<div class="timeline_resume">
+					<div class="btn-bg bg-3">
+	    				<div class="btn btn-3">
+	      					<button onclick="affichage(`'.$frep['intitule2'].'`)">En savoir plus</button>
+	    				</div>
+	  				</div>
+				</div>
+	  			<div class ="'.$frep['intitule2'].'" style="display: none;">';
+	  				require "html/".$frep['intitule'].".html";
+	  			echo '
+					<div class="btn-bg bg-3">
+	    				<div class="btn btn-3">
+	      					<button onclick="effacement(`'.$frep['intitule2'].'`)">Précédent</button>
+	    				</div>
+	  				</div>
+	  			</div>';
+			}
+			echo '</li>';
 		}
 	}
 ?>		

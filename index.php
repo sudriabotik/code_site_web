@@ -16,12 +16,16 @@
     	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" >
 	
     	<!-- Script JavaScript -->	
-
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Resource jQuery -->
+		<script src="js/jquery.mobile.custom.min.js"></script> <!-- Conversion du site pour mobile -->
 		<script src="js/modernizr.js"></script> <!-- Ressource pour la timeline -->
 		<script src="js/facebook.js"></script> <!-- Ressource pour le widget Facebook -->
-    
+		<script src="js/affichage_contenu_timeline.js"></script>
+		<script src="js/effacement_contenu_timeline.js"></script>
+  
     	<!-- Pages CSS -->
-    
+    	
+    	<link href="css/article_cdr.css" rel="stylesheet">
     	<link href="css/navbar.css" rel="stylesheet">
 	    <link href="css/index.css" rel="stylesheet">
 	    <link href="css/loader.css" rel="stylesheet">
@@ -29,6 +33,7 @@
 	    <link href="css/timeline.css" rel="stylesheet">
 	    <link href="css/widget.css" rel="stylesheet">
 	    <link href="css/equipe.css" rel="stylesheet">
+	    <link href="css/bouton-timeline.css" rel="stylesheet">
 
 	    <!-- Animations -->
 	    <link href="css/animation-sponsors.css" rel= "stylesheet">
@@ -78,7 +83,6 @@
 					<div class="hex-brick h2"></div>
 					<div class="hex-brick h3"></div>
 				</div>
-				
 				<div class="gel c8 r2">
 					<div class="hex-brick h1"></div>
 					<div class="hex-brick h2"></div>
@@ -345,132 +349,7 @@
 		    	<div class="wrapper">
 					<h1>Notre équipe</h1>
 					<div class="cols">
-						<div class="col">
-							<div class='animated flipInY' data-id='1'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/pres.jpg)">
-										<div class="inner">
-											<p>Georges CORBINEAU</p>
-				              				<span>Président</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-										  <p>4e année à l'ESME Sudria </p>
-										  <span><br>2 ans à Sudriabotik</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class='animated flipInY' data-id='2'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/vice_pres.jpg)">
-										<div class="inner">
-											<p>Hanako AUDRY</p>
-				              				<span>Vice-présidente <br>&<br>Responsable mécanique</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-											<p>4e année à l'ESME Sudria</p>
-											<span><br>3 ans à Sudriabotik</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class='animated flipInY' data-id='3'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/tresorier.jpg)">
-										<div class="inner">
-											<p>Pierre WILS</p>
-				             				<span>Trésorier</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-											<p>1ère année à l'ESME Sudria </p>
-											<span><br>2 ans à Sudriabotik </span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class='animated flipInY' data-id='4'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/secretaire.jpg)">
-										<div class="inner">
-											<p>Florence PASCUAL</p>
-				              				<span>Secrétaire</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-											<p>4e année à l'ESME Sudria </p>
-											<span><br>2 ans à Sudriabotik </span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class='animated flipInY' data-id='5'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/respelec.jpg)">
-										<div class="inner">
-											<p>Quentin CHOPINET</p>
-				              				<span>Responsable électronique</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-											<p>4e année à l'ESME Sudria </p>
-											<span><br>1 an à Sudriabotik</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class='animated flipInY' data-id='6'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/respinfo.jpg)">
-										<div class="inner">
-											<p>Nicolas GAIGE</p>
-				              				<span>Responsable informatique</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-											<p>4e année à l'ESME Sudria </p>
-											<span><br>1 an à Sudriabotik </span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class='animated flipInY' data-id='7'>
-								<div class="container3">
-									<div class="front" style="background-image: url(img/respcom.jpg)">
-										<div class="inner">
-											<p>Mathilde STAEHLE</p>
-				              				<span>Responsable communication</span>
-										</div>
-									</div>
-									<div class="back">
-										<div class="inner">
-											<p>4e année à l'ESME Sudria </p>
-											<span><br>1 an à Sudriabotik </span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<?php include('php/equipe.php'); ?>
 					</div>
 			 	</div> <!-- .cols --> 	
 		    </section> <!-- .section4 -->
@@ -530,7 +409,8 @@
 					  		data-small-header="false" 
 					  		data-adapt-container-width="true" 
 					  		data-hide-cover="false" 
-					  		data-show-facepile="true">
+					  		data-show-facepile="true"
+					  		data-width="500">
 					  			<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
 					  				<a href="https://www.facebook.com/facebook">Facebook</a>
 					  			</blockquote> <!-- .fb-xfbml-parse-ignore -->
@@ -576,13 +456,10 @@
 		
 	    
 		    <!-- Script JavaScript -->
-		    
-		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Resource jQuery -->
-		    <script src="js/jquery.mobile.custom.min.js"></script> <!-- Conversion du site pour mobile -->
-		    
+		       
 		    <script src="js/navbar-2.js"></script> <!-- Deuxième barre de navigation -->
 		    <script src="js/timeline.js"></script> <!-- Resource jQuery pour la timeline -->
-		    <script src="js/jquery.nicescroll.min.js"></script> <!-- Ressource pour le skin de la barre de scrolling verticale -->
+		    <script src="js/jquery.nicescroll.min.js"></script> <!-- Ressource pour le skin de la barre de scrolling vertical -->
 		    <script src="js/niceScroll.js"></script> <!-- Ressource pour le skin du scroll vertical -->
 			<script type="text/javascript" src="js/scroll.js"></script> <!-- Glissement de la page avec les ancres -->
 			<script type="text/javascript" src="js/loading.js"></script> <!-- Page de chargement -->

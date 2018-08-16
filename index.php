@@ -40,7 +40,7 @@
 
 	</head>
     <body>
-    	<div class="loader">
+    	<div class="loader" style="display: none;">
 			<div class="socket">
 				<div class="gel center-gel">
 					<div class="hex-brick h1"></div>
@@ -233,7 +233,7 @@
 		</div> <!-- loader -->
     	
     	<!-- La classe content affiche le contenu de la page une fois chargée (voir loading.js) -->
-    	<div class="content" style="display: none;">
+    	<div class="content">
 	    	<!-- Gère les 2 barres de navigation -->
 	    	<nav>
 	    		<!-- Barre de navigation en haut de la page -->
@@ -311,7 +311,8 @@
 		    	<div id="sponsors">
 			      	<div class="Elsys"><a href="http://www.elsys-design.com/en" ><img src="img/Elsys.png" class='animated fadeInLeft slow' data-id='1'></a></div> <!-- .animated fadeInLeft slow  -->
 			      	<div class="Thales"><a href="https://www.thalesgroup.com" ><img src="img/Thales.png" class='animated fadeInLeft slow' data-id='2'></a></div> <!-- .animated fadeInLeft slow  -->
-			      	<div class="Esme"><a href="http://www.esme.fr"><img src="img/Esme.png" class='animated fadeInLeft slow' data-id='3'></a></div> <!-- .animated fadeInLeft slow  -->
+			      	<div class="Altran"><a href="https://www.altran.com/fr/fr/"><img src="img/Altran.png" class='animated fadeInLeft slow' data-id='3'></a></div> <!-- .animated fadeInLeft slow  -->
+			      	<div class="Esme"><a href="http://www.esme.fr"><img src="img/Esme.png" class='animated fadeInLeft slow' data-id='4'></a></div> <!-- .animated fadeInLeft slow  -->
 		      	</div> <!-- #sponsors -->
 		    </section> <!-- .section3 -->
 

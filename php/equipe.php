@@ -1,6 +1,6 @@
 <?php
 	//On importe la base de donnée "data" depuis mysql. UTF-8 , identifiant et mot de passe.
-	$bddBotik = new PDO('mysql:host=localhost;dbname=data;charset=utf8', 'root', '');
+	$bddBotik = new PDO('mysql:host=sudriaboxdbotik.mysql.db;dbname=sudriaboxdbotik;charset=utf8', 'sudriaboxdbotik', 'B0tik01Sudria');
 	// On affiche toutes les données disponibles pour chaque série.
 	$rep = $bddBotik->query('SELECT * FROM equipe ORDER BY id');
 	//On affiche pour chaques évenement: son image, son titre, sa date et l'article associé.

@@ -1,7 +1,7 @@
 <?php 
 
 //Destinataire du mail
-	$email_destinataire = 'georges91360@hotmail.fr';
+	$email_destinataire = 'sudriabotik@gmail.com';
 
 	//Message de confirmation
 	$message_envoye = "Votre message nous est bien parvenu !";
